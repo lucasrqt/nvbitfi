@@ -1,0 +1,15 @@
+inspecting: simple_add(int)
+num_static_instrs: 56
+maxregs: 8(8)
+Injection data
+index: 0
+kernel_name: simple_add(int)
+ctas: 10
+instrs: 322762
+ grp 0: 0 grp 1: 0 grp 2: 0 grp 3: 122240 grp 4: 266 grp 5: 200256 grp 6: 322496 grp 7: 200256
+mask: 0x40000000
+beforeVal: 0x20;afterVal: 0x40000020
+regNo: 3
+opcode: POPC
+pcOffset: 0x2c0
+tid: 8948

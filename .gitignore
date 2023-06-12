@@ -1,0 +1,5 @@
+*.o
+test-apps/sample-tool
+logs/sample-tool
+*.so
+*.pyc

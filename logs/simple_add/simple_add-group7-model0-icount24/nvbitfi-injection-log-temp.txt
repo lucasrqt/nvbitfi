@@ -1,0 +1,15 @@
+inspecting: simple_add(int)
+num_static_instrs: 56
+maxregs: 8(8)
+Injection data
+index: 0
+kernel_name: simple_add(int)
+ctas: 10
+instrs: 312260
+ grp 0: 0 grp 1: 0 grp 2: 0 grp 3: 119616 grp 4: 260 grp 5: 192384 grp 6: 312000 grp 7: 192384
+mask: 0x8000000
+beforeVal: 0x1e;afterVal: 0x800001e
+regNo: 5
+opcode: S2R
+pcOffset: 0x290
+tid: 2462

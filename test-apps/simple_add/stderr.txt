@@ -1,0 +1,6 @@
+nvcc warning : The 'compute_35', 'compute_37', 'sm_35', and 'sm_37' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 4 bytes gmem
+ptxas info    : Compiling entry function '_Z10simple_addi' for 'sm_35'
+ptxas info    : Function properties for _Z10simple_addi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 7 registers, 324 bytes cmem[0]

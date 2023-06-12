@@ -1,0 +1,11 @@
+inspecting: simple_add(int)
+num_static_instrs: 56
+maxregs: 8(8)
+ERROR FAIL Detected Signal SIGKILL
+ grp 0: 0 grp 1: 0 grp 2: 0 grp 3: 115968 grp 4: 207 grp 5: 180128 grp 6: 296096 grp 7: 180128
+mask: 0x400000
+beforeVal: 0x1;afterVal: 0x400001
+regNo: 2
+opcode: IADD3
+pcOffset: 0x250
+tid: 7966

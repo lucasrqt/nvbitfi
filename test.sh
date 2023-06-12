@@ -53,7 +53,7 @@ export NVBITFI_HOME=$CWD
 export CUDA_BASE_DIR=/usr/local/cuda
 export PATH=$PATH:$CUDA_BASE_DIR/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_BASE_DIR/lib64/:$CUDA_BASE_DIR/extras/CUPTI/lib64/
-
+export CUDA_INJECTION64_PATH=/home/lucasroquet/nvbit_release/tools/nvbitfi/profiler/profiler.so
 
 ###############################################################################
 # Step 0 (3): Build the nvbitfi injector and profiler tools
@@ -69,11 +69,19 @@ cd $CWD
 # Step 0 (4): Run the app without instrumentation. Collect golden stdout and
 # stderr files. User must generate this before starting the injection campaign.
 ###############################################################################
-printf "\nStep 0 (4): Run and collect output without instrumentation\n"
-cd test-apps/simple_add/
-make 2> stderr.txt
-make golden
-cd $CWD
+# printf "\nStep 0 (4): Run and collect output without instrumentation\n"
+# cd test-apps/simple_add/
+# make 2> stderr.txt
+# make golden
+# cd $CWD
+# printf "\nStep 0 (4): Run and collect output without instrumentation\n"
+# cd test-apps/sample-tool/
+# ./main.py -l data/gold_save.pt 2> stderr.txt
+# echo " [+] stderr output collection done"
+# ./main.py -l data/gold_save.pt >golden_stdout.txt 2>golden_stderr.txt
+# echo " [+] gold output and stderr collection done"
+# cd $CWD
+
 
 ###############################################################################
 # Step 1: Profile and generate injection list
@@ -83,11 +91,11 @@ cd $CWD
 # (2) Generate injection list for architecture-level error injections for the
 # selected error injection model. 
 ###############################################################################
-cd scripts/
-printf "\nStep 1 (1): Profile the application\n"
-python run_profiler.py
-rm -f stdout.txt stderr.txt ### cleanup
-cd -
+# cd scripts/
+# printf "\nStep 1 (1): Profile the application\n"
+# python run_profiler.py
+# rm -f stdout.txt stderr.txt ### cleanup
+# cd -
 
 cd scripts/
 printf "\nStep 1 (2): Generate injection list for instruction-level error injections\n"
